@@ -1,0 +1,11 @@
+
+- "direct addressing" is only allowed:
+    - on 1st level FCs
+    - when accessing "xxSetupDb"
+- 4 structures allow addressing using the full qualifier
+    - Communication
+    - HMI
+    - Monitoring
+    - Sequences
+- mapping of interfaces is allowed and should be done in SCL
+- 

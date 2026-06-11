@@ -1,0 +1,98 @@
+<mxfile host="65bd71144e">
+    <diagram id="DwwG3VAuk9CZpEee1ZSE" name="Page-1">
+        <mxGraphModel dx="1880" dy="1055" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" value="FB32 &quot;SequenceLocking&quot;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="510" width="310" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="160" y="60" width="800" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="FB6 &quot;LockingDevices&quot;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="7" vertex="1">
+                    <mxGeometry width="800" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="group" vertex="1" connectable="0" parent="7">
+                    <mxGeometry x="50" y="49.99999999999999" width="640" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;span style=&quot;font-family: monospace; font-size: 0px; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22VariableViaInterface%20(InOut)%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfillColor%3Dlight-dark(%23D5E8D4%2C%234D9900)%3BstrokeColor%3D%2382b366%3Balign%3Dleft%3BverticalAlign%3Dtop%3BgradientColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22366%22%20y%3D%22420%22%20width%3D%22194%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;align=left;verticalAlign=top;" parent="10" vertex="1">
+                    <mxGeometry width="640" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="#tbOpenCw" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;gradientColor=#97d077;" vertex="1" parent="10">
+                    <mxGeometry x="70" y="31.43" width="118.06" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="#tbOpenCcw" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;gradientColor=#97d077;" vertex="1" parent="10">
+                    <mxGeometry x="70" y="70" width="118.06" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="#sIo.sGearLockOpenValve.bValue&lt;br&gt;&lt;span style=&quot;&quot;&gt;Type: #IoDoWago750508.BOOL&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#D5E8D4,#295A0D);strokeColor=#82b366;align=left;verticalAlign=top;gradientColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="10">
+                    <mxGeometry x="350" y="111.43" width="194" height="38.57" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="10" source="18" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="shape=or;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+                    <mxGeometry x="217" y="26" width="60" height="78.57" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="10" source="9" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="10" source="11" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="group" vertex="1" connectable="0" parent="7">
+                    <mxGeometry x="60" y="280" width="260" height="61.43000000000001" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="net6" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;align=left;verticalAlign=top;" vertex="1" parent="29">
+                    <mxGeometry width="260" height="61.43" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="FB5 &quot;LockDeviceIo&quot; EXECUTION" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="29">
+                    <mxGeometry x="40" y="15.70999999999998" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="180" y="680" width="900" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="FB5 &quot;LockingDeviceIo&quot;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="23" vertex="1">
+                    <mxGeometry width="900" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="group" vertex="1" connectable="0" parent="23">
+                    <mxGeometry x="120" y="110" width="460" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="net3 &quot;Gear lock Close valve&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;align=left;verticalAlign=top;" vertex="1" parent="25">
+                    <mxGeometry width="460" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="#sGearLockCloseValve&lt;br&gt;Type: #IoDoWago750508" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#D5E8D4,#295A0D);strokeColor=#82b366;align=left;verticalAlign=top;gradientColor=none;" vertex="1" parent="25">
+                    <mxGeometry x="80" y="60" width="194" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="#sGearLockOpenValve&lt;br&gt;Type: #IoDoWago750508" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#D5E8D4,#295A0D);strokeColor=#82b366;align=left;verticalAlign=top;gradientColor=none;" vertex="1" parent="25">
+                    <mxGeometry x="80" y="110" width="194" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="27" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="DB9 &quot;LockingDeviceDB&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;verticalAlign=top;gradientColor=#ea6b66;" vertex="1" parent="1">
+                    <mxGeometry x="-140" y="870" width="194" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="DB???" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;verticalAlign=top;gradientColor=#ea6b66;" vertex="1" parent="1">
+                    <mxGeometry x="-130" y="370" width="194" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="31">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Instanz" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="35">
+                    <mxGeometry x="0.3205" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="28" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Instanz" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="37">
+                    <mxGeometry x="0.3829" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

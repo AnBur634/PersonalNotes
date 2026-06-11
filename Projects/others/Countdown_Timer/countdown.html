@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>URL-based Countdown</title>
+  <!-- Favicon: small clock icon embedded as base64 SVG -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8Y2lyY2xlIGN4PSI4IiBjeT0iOCIgcj0iNyIgZmlsbD0iIzBmMTIyMCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8bGluZSB4MT0iOCIgeTE9IjgiIHgyPSI4IiB5Mj0iNCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8bGluZSB4MT0iOCIgeTE9IjgiIHgyPSIxMSIgeTI9IjkiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjwvc3ZnPg=="
+    type="image/svg+xml"
+  />
+
+
+  <style>
+    /* Basic page reset and centering */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: system-ui, Arial, sans-serif;
+      background: #0f1220;
+      color: #ffffff;
+    }
+
+    /* Center the countdown on the page */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    /* Countdown text styling */
+    #countdown {
+      font-size: 6rem;
+      letter-spacing: 0.1em;
+    }
+
+    /* Smaller note text (e.g. errors) */
+    #note {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #ffb3b3;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <div id="countdown">--:--:--</div>
+      <div id="note"></div>
+    </div>
+  </div>
+  <script>
+  // Helper to pad numbers to 2 digits (e.g. 4 -> "04")
+  function pad2(num) {
+    return String(num).padStart(2, "0");
+  }
+
+  // Read the "t" parameter from the URL, e.g. ?t=164531 or ?t=1645
+  const params = new URLSearchParams(window.location.search);
+  const t = params.get("t");
+
+  const countdownEl = document.getElementById("countdown");
+  const noteEl = document.getElementById("note");
+
+  // Accept hhmm or hhmmss
+  if (!t || !/^(\d{4}|\d{6})$/.test(t)) {
+    // Invalid or missing parameter -> show error
+    countdownEl.textContent = "--:--";
+    noteEl.textContent = "Invalid or missing URL parameter ?t=hhmm or ?t=hhmmss";
+  } else {
+    // Extract hour, minute, second from the parameter
+    const showSeconds = t.length === 6;
+
+    const targetHour = parseInt(t.slice(0, 2), 10);
+    const targetMinute = parseInt(t.slice(2, 4), 10);
+    const targetSecond = showSeconds ? parseInt(t.slice(4, 6), 10) : 0;
+
+    // Create a Date object for the target time (today)
+    function getTargetDate() {
+      const now = new Date();
+      const target = new Date(now);
+      target.setHours(targetHour, targetMinute, targetSecond, 0);
+
+      if (target <= now) {
+        target.setDate(target.getDate() + 1);
+      }
+      return target;
+    }
+
+    let targetDate = getTargetDate();
+
+    // Update the countdown every second
+    function updateCountdown() {
+      const now = new Date();
+      const diffMs = targetDate - now;
+
+      if (diffMs <= 0) {
+        countdownEl.textContent = showSeconds ? "00:00:00" : "00:00";
+        return;
+      }
+
+      const totalSeconds = Math.floor(diffMs / 1000);
+
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+
+      countdownEl.textContent = showSeconds
+        ? `${pad2(hours)}:${pad2(minutes)}:${pad2(seconds)}`
+        : `${pad2(hours)}:${pad2(minutes)}`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  }
+</script>
+</body>
+</html>
