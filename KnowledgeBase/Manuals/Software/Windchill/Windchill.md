@@ -33,4 +33,19 @@ So make sure to talk to the person in order to get the review done!
 - Neue Dokumente erstellen
 	- Immer das Template "Windchill Generic" benutzen und dann die Infos aus dem korrekten Template raussuchen
 
-
+## Review Document
+1. Go to home in Windchill
+   - ![alt text](attachments/image.png)
+2. Click on the `Change Notice`
+   - ![alt text](attachments/image-1.png)
+4. Click on
+   - ![alt text](attachments/image-2.png)
+5. Select the document
+   - ![alt text](attachments/image-3.png)
+6. Review the PDF Document
+   - ![alt text](attachments/image-4.png)
+7. If the document is OK
+	1. Go back to the `Review Change Notice` from Step 2
+	2. Scroll down
+	3. Complete Task
+		- ![alt text](attachments/image-5.png)

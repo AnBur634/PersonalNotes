@@ -12,3 +12,10 @@
 	- [ ] Does every PLC Block with a change have a comment reflecting that change?
 	- [ ] Does every changes Network have a comment reflecting that change?
 	- [ ] Are all Changes in the Project_CV?
+
+`Windchill.md` -> `## Review Document`
+
+`Octoplant.md` -> `## Check-In Version after Review`
+
+Dann werden Passwörter für Know-How Protection erstellt und das Projekt im DLS Ordner hochgeladen.  
+Dann muss ich prüfen, ob die Version im DLS Ordner mit den gegebenen Passwörtern funktioniert.
